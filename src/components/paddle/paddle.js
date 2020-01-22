@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./paddle.css";
 
 function Paddle() {
   return <div className="paddle" />;
