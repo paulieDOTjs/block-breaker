@@ -1,8 +1,13 @@
 import React from "react";
-import "./paddle.css";
+import "./Paddle.css";
 
-function Paddle() {
-  return <div className="paddle" />;
+export default function Paddle({ paddleX }) {
+  return (
+    <div
+      className="paddle"
+      style={{
+        left: `${paddleX}px`
+      }}
+    />
+  );
 }
-
-export default Paddle;

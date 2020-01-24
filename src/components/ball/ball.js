@@ -1,8 +1,14 @@
-import React from "react";
-import "./ball.css";
+import React, { useEffect, useState } from "react";
+import "./Ball.css";
 
-function Ball() {
-  return <div className="ball" />;
+export default function Ball({ pos }) {
+  return (
+    <div
+      className="ball"
+      style={{
+        left: `${pos.x}px`,
+        top: `${pos.y}px`
+      }}
+    />
+  );
 }
-
-export default Ball;
